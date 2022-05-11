@@ -1,0 +1,12 @@
+> keep ganache open in the bg 
+> add a new contract /src/contracts 
+> terminal > run truffle compile 
+> add a new migration /migrations
+> terminal > run truffle migrate 
+> terminal > open truffle console 
+> truffle console > 
+contract = await SocialNetwork.deployed() > Enter
+contract > Enter 
+> terminal > npm start to run the react file on localhost
+> truffle console > .exit > Enter 
+> exit the truffle console
