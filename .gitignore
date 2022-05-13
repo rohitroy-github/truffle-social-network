@@ -91,3 +91,7 @@ tmp
 # OS specific local files
 .DS_Store
 Thumbs.db
+
+# My Files 
+readMeRohit.txt
+/readMeRohit.txt
