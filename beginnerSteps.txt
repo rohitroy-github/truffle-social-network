@@ -10,3 +10,9 @@ contract > Enter
 > terminal > npm start to run the react file on localhost
 > truffle console > .exit > Enter 
 > exit the truffle console
+
+Notes > 
+To deploy a copy of the contract on the blockchain 
+> truffle migrate --reset 
+
+--reset flag lets the blockchain know that the old contract has to deleted and a new one has to added 
