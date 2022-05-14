@@ -19,8 +19,8 @@
     "react": "^18.1.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "truffle": "^5.5.13",
+    "react-scripts": "^2.1.3",
+    "truffle": "^5.1.67",
     "web-vitals": "^2.1.4",
     "web3": "^1.7.3"
   },
