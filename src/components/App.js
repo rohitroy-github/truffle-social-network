@@ -4,6 +4,7 @@ import logo from '../logo.png';
 import './App.css';
 
 import Web3 from 'web3';
+import WalletConnection from './WalletConnection';
 
 class App extends Component 
 {
@@ -42,13 +43,14 @@ class App extends Component
     //Load Account 
     const accounts = await web3.eth.getAccounts(); //.then(console.log);
     console.log(accounts)
+    return accounts; 
   }
 
   render() 
   {
     return (
       <div>
-        <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        {/* <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
           <a
             className="navbar-brand col-sm-3 col-md-2 mr-0"
             href="http://www.dappuniversity.com/bootcamp"
@@ -69,11 +71,15 @@ class App extends Component
                 >
                   <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <h1>Rohit Roy - Blockchain</h1>
+                <h2>Rohit Roy - Blockchain</h2>
+                <h2>Ethereum Address : {this.loadBlockchainData}</h2> 
               </div>
             </main>
           </div>
-        </div>
+        </div> */}
+
+        {/* Test Code */}
+        <WalletConnection /> 
       </div>
     );
   }
