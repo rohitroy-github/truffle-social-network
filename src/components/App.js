@@ -8,8 +8,11 @@ import Web3 from 'web3';
 class App extends Component 
 {
   async componentWillUnmount() 
+  //This function gets called before rendering any other code
   {
     await this.loadWeb3;
+
+    await this.loadBlockchainData;
   }
    
   //function to make connections to a Metamask wallet making a website to a blockchain/ web3 website
@@ -32,7 +35,17 @@ class App extends Component
     }
   }
 
-  render() {
+  //Get Blockchain data
+  async loadBlockchainData()
+  {
+    const web3 = window.web3; 
+    //Load Account 
+    const accounts = await web3.eth.getAccounts(); //.then(console.log);
+    console.log(accounts)
+  }
+
+  render() 
+  {
     return (
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -42,7 +55,7 @@ class App extends Component
             target="_blank"
             rel="noopener noreferrer"
           >
-            Dapp University
+            Starter Kit
           </a>
         </nav>
         <div className="container-fluid mt-5">
@@ -56,18 +69,7 @@ class App extends Component
                 >
                   <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <h1>Dapp University Starter Kit</h1>
-                <p>
-                  Edit <code>src/components/App.js</code> and save to reload.
-                </p>
-                <a
-                  className="App-link"
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LEARN BLOCKCHAIN <u><b>NOW! </b></u>
-                </a>
+                <h1>Rohit Roy - Blockchain</h1>
               </div>
             </main>
           </div>
